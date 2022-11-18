@@ -47,6 +47,10 @@
     box-shadow: 5px 5px maroon;
 }
 
+.bar:hover {
+    box-shadow: 3px 3px maroon;
+}
+
 .search-icon {
     width: 30px;
     height: auto;
