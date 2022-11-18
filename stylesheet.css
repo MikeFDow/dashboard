@@ -1,7 +1,7 @@
-.container > div {
-    border: 5px solid turquoise;
+/*.container > div {
+    border: 2px solid turquoise;
 }
-
+*/
 .container {
     height: 1000px;
     display: grid;
@@ -12,6 +12,47 @@
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    height: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.header > div {
+   /* border: 2px solid cornflowerblue; */
+
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 2fr;
+    
+}
+
+.header-top > li {
+    margin: auto;
+    width: 90%;
+    padding-bottom: 15px;
+    margin-left: 35px;
+}
+
+
+
+.bar {
+    width: 90%;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding-left: 15px;
+    box-shadow: 5px 5px maroon;
+}
+
+.search-icon {
+    width: 30px;
+    height: auto;
+    position: relative;
+    top: 8px;
+    padding-right: 15px;
 }
 
 .sidebar {
@@ -20,11 +61,15 @@
     display: grid;
     grid-template-rows: 1fr 4fr 2fr 3fr;
     row-gap: 20px;
+    box-shadow: 10px 0px 10px -5px grey;
 }
 
 .main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* div.sidebar > div {
@@ -80,4 +125,27 @@ img {
     padding-right: 20px;
     position: relative;
     top: 5px;
+}
+
+.notification {
+    width: 40px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    left: 170px;
+}
+
+.propic {
+    width: 96px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    left: 130px;
+}
+
+.header-top > p {
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50px;
 }
