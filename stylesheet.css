@@ -59,6 +59,42 @@
     padding-right: 15px;
 }
 
+.header-bottom {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr;
+}
+
+.header-bottom > div {
+    position: relative;
+    left: 60px;
+    bottom: 15px;
+    max-width: 80%;
+}
+
+.header-bottom > button {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    margin-right: 75px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px maroon;
+    font-size: 17px;
+}
+
+.header-bottom > button:hover{
+    box-shadow: 2px 2px maroon;
+}
+
+.greeting {
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+
+.name {
+    font-size: 30px;
+}
+
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -71,9 +107,57 @@
 .main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-image: url("background.jpg");
+    background-image: url("background.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+.projects > p {
+    font-size: 40px;
+    position: relative;
+    left: 30px;
+    top: 40px;
+    margin-top: 0px;
+    background-color: white;
+    width: max-content;
+    border: 2px solid black;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 3px 3px maroon;
+    border-radius: 6px;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+
+.card {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 3px 3px maroon;
+    border-radius: 6px;
+}
+
+.side-main {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+}
+
+.main > div {
+    border: 2px solid coral;
 }
 
 /* div.sidebar > div {
