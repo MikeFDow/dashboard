@@ -2,6 +2,11 @@
     border: 2px solid turquoise;
 }
 */
+
+@font-face {
+    font-family: customFont;
+    src: url("Amble-Regular.ttf");
+}
 .container {
     height: 1000px;
     display: grid;
@@ -126,6 +131,7 @@
     top: 40px;
     margin-top: 0px;
     background-color: white;
+    height: max-content;
     width: max-content;
     border: 2px solid black;
     padding: 5px;
@@ -162,6 +168,27 @@
 .card-info {
     font-size: 20px;
 }
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+.add-icon {
+    grid-column: 2 / 3;
+    width: 35px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.download-icon {
+    grid-column: 3 / 4;
+    width: 35px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0px;
+}
 .side-main {
     display: grid;
     grid-template-rows: 1fr 5fr 1fr 5fr;
@@ -174,6 +201,18 @@
     border: 2px solid black;
     box-shadow: 3px 3px maroon;
     border-radius: 6px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 30px; 
+    padding-top: 15px;  
+}
+
+.side-div {
+    border-bottom: 1px solid grey;
+}
+
+h3 {
+    margin-bottom: -10px;
 }
 
 .side-main > p {
@@ -187,6 +226,7 @@
     border-radius: 6px;
     background-color: white;
     width: fit-content;
+    height: max-content;
     position: relative;
     top: 40px;
 }
@@ -267,4 +307,16 @@ img {
     font-size: 30px;
     font-weight: bold;
     padding-left: 50px;
+}
+
+p {
+    font-family: customFont;
+}
+
+li {
+    font-family: customFont;
+}
+
+button {
+    font-family: customFont;
 }
